@@ -1,0 +1,342 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>생체재료학 기말 요약본</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: one reading column, sticky section chips; red boxes = 출제 예상 (slide underline/bold) */
+:root{
+  --bg:#F2F5F4;--surface:#FFFFFF;--ink:#17252A;--muted:#566A6F;--line:#D3DEDC;
+  --teal:#1F6B6E;--teal-soft:#E0EFEE;--exam:#C0322A;--exam-soft:#FBEBE9;
+  --sans:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101818;--surface:#172123;--ink:#E2ECEB;--muted:#97AAAD;--line:#283638;
+  --teal:#7FC7C6;--teal-soft:#1B2F31;--exam:#FF7A70;--exam-soft:#3A1E1D;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101818;--surface:#172123;--ink:#E2ECEB;--muted:#97AAAD;--line:#283638;
+  --teal:#7FC7C6;--teal-soft:#1B2F31;--exam:#FF7A70;--exam-soft:#3A1E1D;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 60px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;word-break:keep-all}
+.wrap{max-width:720px;margin:0 auto;padding-inline:18px;padding-block:0 64px}
+header.top{padding-block:28px 12px}
+header.top h1{font-size:1.55rem;line-height:1.3;margin:0 0 8px;text-wrap:balance}
+header.top p{margin:0;color:var(--muted);font-size:.94rem;line-height:1.65}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;font-size:.8rem}
+.legend span{padding:2px 10px;border-radius:999px;font-weight:600}
+.lg-exam{background:var(--exam-soft);color:var(--exam)}
+.lg-num{background:var(--teal-soft);color:var(--teal)}
+nav.chips{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);margin:0 -18px;padding:10px 18px;border-bottom:1px solid var(--line);display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+nav.chips::-webkit-scrollbar{display:none}
+nav.chips a{flex:none;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);padding:4px 12px;border-radius:999px;font-size:.85rem;font-weight:600}
+a:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+section{padding-top:36px}
+.kicker{margin:0;color:var(--teal);font-weight:700;font-size:.84rem;letter-spacing:.03em}
+h2{font-size:1.3rem;line-height:1.4;margin:2px 0 10px;text-wrap:balance}
+h3{font-size:1.03rem;margin:22px 0 8px}
+p{margin:0 0 12px}
+ul.tight,ol.tight{padding-left:1.2em;margin:0 0 12px}
+ul.tight li,ol.tight li{margin:5px 0}
+.lead{background:var(--teal-soft);border-radius:10px;padding:10px 14px;margin:0 0 14px;font-size:.95rem}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface);margin:0 0 14px}
+.tbl table{border-collapse:collapse;width:100%;font-size:.88rem;line-height:1.55}
+.tbl th,.tbl td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl tr:last-child td{border-bottom:0}
+.tbl th{color:var(--muted);font-size:.78rem;font-weight:600;white-space:nowrap}
+.num{font-variant-numeric:tabular-nums}
+.exam{background:var(--exam-soft);border-radius:12px;padding:12px 16px 4px;margin:14px 0}
+.exam .et{margin:0 0 6px;font-weight:700;color:var(--exam);font-size:.9rem}
+.exam .tbl{background:var(--surface)}
+.red{color:var(--exam);font-weight:700}
+.n{font-family:var(--mono);font-size:.92em;background:var(--teal-soft);color:var(--teal);padding:0 5px;border-radius:5px;white-space:nowrap}
+pre.mol{font-family:var(--mono);font-size:.84rem;line-height:1.45;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px;overflow-x:auto;margin:6px 0 12px}
+footer{margin-top:40px;color:var(--muted);font-size:.84rem}
+@media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
+</style>
+
+<div class="wrap">
+<header class="top">
+<h1>의약품생체재료학 기말 요약본</h1>
+<p>나 교수님 자료 1강(Introduction)과 2강(Natural polymers: Proteins)을 정리했어요. 기말은 족보가 없어서, 슬라이드에서 <b>밑줄·굵게</b> 강조된 문장과 숫자를 출제 예상으로 표시했어요.</p>
+<div class="legend"><span class="lg-exam">빨간 박스 = 출제 예상</span><span class="lg-num">초록 숫자 = 외울 숫자</span></div>
+</header>
+
+<nav class="chips" aria-label="단원 바로가기">
+<a href="#map">범위 지도</a><a href="#l1">1강</a><a href="#l2a">단백질·젤라틴</a><a href="#l2b">알부민</a><a href="#l2c">Abraxane</a><a href="#l2d">당뇨·비만</a><a href="#nums">숫자 총정리</a>
+</nav>
+
+<section id="map">
+<p class="kicker">범위 지도</p>
+<h2>기말은 "알부민 이야기"가 절반 이상이에요</h2>
+<div class="tbl"><table>
+<thead><tr><th>강의</th><th>내용</th><th>출제 예상 포인트</th></tr></thead><tbody>
+<tr><td>1강</td><td>생체재료 정의, DDS·조직공학, 고분자 용어, 중합 3종</td><td>정의 문장, 올리고머 단위 수, 공중합체 5종, 중합 반응식(나일론 6,10)</td></tr>
+<tr><td>2강 ①</td><td>천연 고분자, 단백질 구조, 콜라겐 → 젤라틴</td><td>천연 고분자 장점 2가지, 접합 단백질 표, 젤라틴 Type A/B, Gelfoam</td></tr>
+<tr><td>2강 ②</td><td>알부민의 숫자·기능·구조·용도, EPR</td><td>66.5 kDa, 35–50 g/L, 반감기 19일, 기능 6가지, 도메인 I–III, EPR</td></tr>
+<tr><td>2강 ③</td><td>nab 기술, Abraxane</td><td>100–200 nm / 130 nm, 2005 유방암, Cremophor EL 독성, 3 h → 30 min</td></tr>
+<tr><td>2강 ④</td><td>인슐린 디터미어, GLP-1, 티르제파타이드</td><td>지방산 결합 → 알부민 결합 → 반감기↑, C14/C16/C18/C20, 반감기 숫자</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="l1">
+<p class="kicker">1강 · Introduction</p>
+<h2>의약품 생체재료와 고분자 기초</h2>
+<div class="exam"><p class="et">정의 (출제 예상)</p>
+<p><b>Pharmaceutical Biomaterials</b>: 생물학적 시스템과 적합한 재료를 개발·응용하여 <span class="red">약물전달(drug delivery), 조직공학(tissue engineering), 재생의학(regenerative medicine)</span>에 쓰는 다학제 분야. 생체재료는 생물학적 시스템과 <b>안전하고 효과적으로 상호작용</b>하도록 설계된다.</p></div>
+
+<h3>1-1. 약물전달시스템(DDS)</h3>
+<ul class="tight">
+<li>생체재료로 <b>방출 조절형(controlled-release) DDS</b>를 만들어 효과는 높이고 부작용은 줄인다.</li>
+<li>예: <b>나노입자, 하이드로겔, 리포좀</b> → 표적 부위로 정밀 전달.</li>
+<li>그래프: (a) 일반 반복 투여는 농도가 최대 허용 농도를 넘었다가 최소 유효 농도 아래로 떨어지기를 반복. (b) 방출 조절 제제는 한 번 투여로 <b>치료 범위 안에 일정하게</b> 유지.</li>
+</ul>
+
+<h3>1-2. 조직공학</h3>
+<ul class="tight">
+<li>생체재료는 손상 조직의 재생·회복을 위한 <b>지지체(scaffold)</b>로, 세포 성장과 조직 형성을 돕는 틀을 제공한다.</li>
+<li>합성 고분자, <b>천연 고분자(콜라겐)</b>, 복합재료가 쓰인다.</li>
+<li>구성요소 그림: 새로운 세포원(iPSC, 리프로그래밍 세포, 배양·바이오리액터), 조직 구조 기술(3D 바이오프린팅, 탈세포화 장기), 공학 재료(성장인자, 전사인자, 지지체, 기계적 자극). 예: 지지체로 사람 귀 재생.</li>
+</ul>
+
+<h3>1-3. 고분자 용어</h3>
+<ul class="tight">
+<li>polymer = poly(많은) + meros(부분) → <b>"many parts"</b>. 작은 반복단위가 많이 이어진 큰 분자(클립을 줄줄이 연결한 그림, PLA 구조).</li>
+<li>단량체(monomer): 같은 또는 다른 분자와 결합해 고분자가 되는 작은 분자. 고분자는 반복단위 하나만 그려 표시(예: 폴리아크릴아마이드 -[CH₂-CH(CONH₂)]n-).</li>
+</ul>
+<div class="exam"><p class="et">올리고머 표 (숫자 출제 예상)</p>
+<div class="tbl num"><table><thead><tr><th>용어</th><th>단위 수</th></tr></thead><tbody>
+<tr><td>Monomer</td><td>1</td></tr><tr><td>Dimer</td><td>2</td></tr><tr><td>Trimer</td><td>3</td></tr>
+<tr><td>Multimer</td><td>5–30</td></tr><tr><td>Oligomer</td><td>30–100</td></tr><tr><td>Polymer</td><td>&gt; 200</td></tr>
+</tbody></table></div></div>
+
+<h3>1-4. 고분자 구조의 역사와 공중합체</h3>
+<div class="tbl"><table><thead><tr><th>시기</th><th>구조</th></tr></thead><tbody>
+<tr><td class="num">1930s</td><td>선형(호모폴리머, 랜덤 공중합체, 블록 공중합체)</td></tr>
+<tr><td class="num">1940s</td><td>가교 젤(crosslinked gel)</td></tr>
+<tr><td class="num">1960s</td><td>가지형(그라프트 공중합체)</td></tr>
+<tr><td class="num">1980s</td><td>덴드리머(dendritic)</td></tr>
+</tbody></table></div>
+<p>두 단량체 A, B로 만들 수 있는 구조(Attwood & Florence): <b>선형 호모폴리머, 교대(alternating), 랜덤, 블록, 그라프트</b> 공중합체.</p>
+
+<h3>1-5. 중합 3종</h3>
+<p><b>중합</b>: 단량체가 공급되는 한 생성물 분자가 <span class="red">무한히 커질 수 있는 화학 반응</span>.</p>
+<div class="tbl"><table><thead><tr><th>종류</th><th>슬라이드 예</th><th>포인트</th></tr></thead><tbody>
+<tr><td>① 자유라디칼</td><td>과산화물 개시제 R-CO-O-O-CO-R → 2 R-COO· → 아크릴아마이드에 붙어 성장 → 폴리아크릴아마이드</td><td>개시 → 성장(단량체가 하나씩)</td></tr>
+<tr><td>② 축합</td><td>헥사메틸렌디아민(물) + 세바코일 클로라이드(테트라클로로에틸렌) → <b>나일론 6,10</b> + nHCl</td><td>두 액체의 <b>계면</b>에서 필름이 생겨 실처럼 뽑아냄(Morgan & Kwolek, 1959)</td></tr>
+<tr><td>③ 이온</td><td>n-부틸리튬(C₄H₉⁻Li⁺) + 스타이렌 → 폴리스티렌 음이온</td><td>사슬중합의 활성점이 <span class="red">라디칼 대신 이온</span></td></tr>
+</tbody></table></div>
+
+<div class="exam"><p class="et">약학용 생체재료 3분류 (1강·2강 첫 슬라이드에 반복)</p>
+<ul class="tight">
+<li><b>천연 고분자</b>: 히알루론산, 콘드로이틴 황산, 키토산, 알긴산, 셀룰로오스, 단백질, 핵산</li>
+<li><b>합성 고분자</b>: PLA, PLGA, PEG</li>
+<li><b>나노재료</b>: 리포좀, 미셀, 덴드리머</li>
+</ul></div>
+</section>
+
+<section id="l2a">
+<p class="kicker">2강 ① · Natural polymers</p>
+<h2>천연 고분자, 단백질, 젤라틴</h2>
+<p>천연 고분자 = 자연에 존재하고 식물·동물에서 추출하는 고분자. <b>단백질, 다당류, 폴리에스터</b>가 이 가족이에요. 일부는 음식으로도 먹고, 의약품 첨가제, 보철, 약물전달, 영상 진단에 쓰여요.</p>
+<div class="exam"><p class="et">천연 고분자의 장점 2가지 (출제 예상)</p>
+<ol class="tight">
+<li>생물학적 환경이 <b>인식</b>하여 <span class="red">대사적 분해 경로로 처리</span>된다(생분해).</li>
+<li><b>세포외기질(ECM)</b>과 닮아서 합성 고분자에서 흔한 <span class="red">만성 면역 반응과 독성</span>을 피할 수 있다.</li>
+</ol></div>
+
+<h3>단백질 = 아미노산 고분자</h3>
+<ul class="tight">
+<li>아미노산의 -COOH와 다음 아미노산의 -NH₂가 <b>물이 빠지며</b>(축합) 펩타이드 결합 -CO-NH-를 만든다.</li>
+<li>폴리펩타이드: 한쪽 끝은 <b>아미노 말단(N-말단)</b>, 반대쪽은 <b>카복실 말단(C-말단)</b>.</li>
+<li>구조 4단계: 1차(아미노산 서열) → 2차(α-나선) → 3차(폴리펩타이드 사슬의 접힘) → 4차(소단위체 조립).</li>
+</ul>
+<div class="tbl"><table><thead><tr><th>접합 단백질</th><th>보결분자단</th><th>예</th></tr></thead><tbody>
+<tr><td>지질단백질</td><td>지질</td><td>혈액의 β₁-지질단백질</td></tr>
+<tr><td>당단백질</td><td>탄수화물</td><td>면역글로불린 G</td></tr>
+<tr><td>인단백질</td><td>인산기</td><td>우유 카제인</td></tr>
+<tr><td>헴단백질</td><td>헴(철 포르피린)</td><td>헤모글로빈</td></tr>
+<tr><td>플라보단백질</td><td>플라빈 뉴클레오타이드</td><td>숙신산 탈수소효소</td></tr>
+<tr><td>금속단백질</td><td>Fe / Zn / Ca / Mo / Cu</td><td>페리틴 / 알코올 탈수소효소 / 칼모듈린 / 디니트로게나제 / 플라스토시아닌</td></tr>
+</tbody></table></div>
+
+<h3>콜라겐 → 젤라틴</h3>
+<div class="exam"><p class="et">젤라틴 (출제 예상)</p>
+<ul class="tight">
+<li>콜라겐(<b>삼중나선</b>)을 <b>산/염기 가수분해 + 가열</b> → 젤라틴 용액.</li>
+<li>식히면(<span class="n">약 35 °C 미만</span>) <b>물리적 가교(junction zone)</b>로 젤, 데우면(약 35 °C 이상) 다시 용액 → <b>열가역성</b>. 그래서 캡슐 재료.</li>
+<li><b>Type A</b>: 산 처리 콜라겐(주로 돼지·소) → <b>경질 캡슐</b> / <b>Type B</b>: 알칼리 처리 콜라겐 → <b>연질 캡슐</b>, 경구·외용 제제 / Type AB: 혼합 / 가수분해 젤라틴: 용해도·생체이용률↑.</li>
+<li>제조: 전처리 → 산 또는 알칼리 처리 → 추출 → 건조.</li>
+<li><b>Gelfoam</b>(Upjohn): 거품 형태의 <b>흡수성 젤라틴 스펀지 지혈제</b>. 출혈 부위에 붙으면 혈전이 생기는 틀이 되고, 체내 효소가 천천히 분해하므로 상처를 닫을 때 그대로 둘 수 있다.</li>
+</ul></div>
+</section>
+
+<section id="l2b">
+<p class="kicker">2강 ② · Albumin</p>
+<h2>알부민: 혈액 속 가장 흔한 운반 단백질</h2>
+<div class="exam"><p class="et">알부민 기본 숫자 (출제 예상)</p>
+<div class="tbl num"><table><tbody>
+<tr><td>혈장 농도</td><td><span class="n">35–50 g/L</span> (가장 많은 혈장 단백질)</td></tr>
+<tr><td>분자량</td><td><span class="n">66.5 kDa</span></td></tr>
+<tr><td>합성</td><td>간, 간 1 g당 <span class="n">0.7 mg/h</span> → 하루 <span class="n">10–15 g</span></td></tr>
+<tr><td>HSA 반감기</td><td><span class="n">19일</span></td></tr>
+<tr><td>안정성</td><td>pH <span class="n">4–9</span> 안정, <span class="n">40%</span> 에탄올에 용해, <span class="n">60 °C</span>에서 <span class="n">10 h</span> 가열해도 괜찮음</td></tr>
+</tbody></table></div></div>
+
+<div class="exam"><p class="et">HSA의 기능 6가지 (출제 예상)</p>
+<ol class="tight" type="a">
+<li><b>장쇄 지방산</b>의 가용화제 → 지질 대사에 필수</li>
+<li>헴 분해산물 <b>빌리루빈</b> 결합</li>
+<li>많은 <b>치료 약물</b> 결합: 페니실린, 설폰아마이드, 인돌 화합물, 벤조디아제핀 등</li>
+<li><b>금속이온 운반</b>: Cu(II)·Ni(II)는 특이적, Ca(II)·Zn(II)는 비특이적으로 결합</li>
+<li>혈액 <b>교질삼투압</b>을 담당하는 주요 단백질</li>
+<li>분해되면 아미노산이 말초조직의 <b>영양</b>이 됨</li>
+</ol>
+<p>단백질 결합(protein binding)은 혈중 약물 운반에 중요하고, 때로는 약물 용해도에도 중요하다.</p></div>
+
+<h3>HSA 구조</h3>
+<ul class="tight">
+<li>X선 구조 분석으로 밝혀짐. <b>도메인 I, II, III</b> 세 개의 유연한 구가 일렬로 이어진 <b>타원체(ellipsoid)</b>. 각 도메인은 a, b 하위 도메인.</li>
+<li>혈장 단백질 중 <b>가장 작은 편</b>. <span class="red">작은 크기 + 풍부함</span> 덕분에 많은 대사물과 약물을 운반한다.</li>
+<li>지방산(미리스트산) 결합 자리 Myr1–5 → 알부민 1분자당 <span class="n">&gt;5개</span>의 지방산 결합 자리. 약물 결합 자리 Site 1(IIa), Site 2(IIIa).</li>
+</ul>
+
+<h3>HSA의 용도</h3>
+<ul class="tight">
+<li>쇼크, 화상, 저알부민혈증, 수술·외상, 심폐우회술, 급성 호흡곤란, 혈액투석.</li>
+<li>혈액 유래 대신 <b>재조합 HSA(Recombumin)</b>: <b>효모</b>에서 발현, 안전성·내약성·PK·PD가 천연 HSA와 동등. (Prime 20% w/v, Elite 10% w/v)</li>
+</ul>
+
+<div class="exam"><p class="et">알부민이 이상적인 약물 운반체인 이유 (출제 예상)</p>
+<p>산성이고 잘 녹으며 매우 튼튼함(pH 4–9, 40% 에탄올, 60 °C 10 h) + <b>종양·염증 조직에 선택적 흡수</b> + 쉽게 구할 수 있음 + <b>생분해성</b> + <b>독성·면역원성 없음</b>.</p></div>
+
+<h3>왜 종양·염증 부위에 쌓일까: EPR</h3>
+<ul class="tight">
+<li>알부민은 <span class="red">새는 모세혈관(leaky capillary) + 림프 배출 부재/결함</span> 때문에 악성·염증 조직에 축적된다.</li>
+<li><b>EPR(Enhanced Permeability and Retention)</b>: 종양의 신생혈관은 엉성하고 새기 때문에 고분자·나노입자가 들어가고(투과↑), 림프 배출이 안 돼서 머문다(저류↑). 작은 분자는 들어가도 다시 빠져나간다. 정상 조직 pH ~7, 종양 pH ~6.</li>
+<li>증거: <b>에반스 블루</b> 염료가 알부민에 강하게 결합 → 피하 종양이 몇 시간 안에 파랗게 변함. ¹¹¹In-DTPA-알부민 영상에서 종양이 클수록 흡수↑(0.23% → 4.2% → 23.1%).</li>
+</ul>
+
+<h3>류마티스 관절염</h3>
+<ul class="tight">
+<li>활동성 RA 환자는 <b>염증 부위의 알부민 소비</b> 때문에 저알부민혈증이 흔하다. 알부민은 염증 부위의 <b>질소·에너지 수요</b>를 채우는 공급원.</li>
+<li>염증 관절의 <b>혈액-관절 장벽 투과성이 크게 증가</b> → 알부민이 염증 관절로 들어감(형광 표지 HSA가 관절염 발가락에 축적).</li>
+<li>그래서 알부민은 RA 관절 표적 운반체. <b>메토트렉세이트(MTX)를 알부민에 결합</b>시킨 알부민 결합 전구약물(EMC-D-Ala-Phe-Lys-Lys(γ-MTX)-OH)이 콜라겐 유발 관절염 모델에서 MTX(8 × 35 mg/kg)보다 적은 용량(8 × 20 mg/kg)으로 더 좋은 효과.</li>
+</ul>
+</section>
+
+<section id="l2c">
+<p class="kicker">2강 ③ · Albumin nanoparticles</p>
+<h2>nab 기술과 Abraxane</h2>
+<div class="exam"><p class="et">nab-technology (출제 예상)</p>
+<ul class="tight">
+<li>American Bioscience가 개발한 <b>알부민 기반 나노입자 기술</b>, <b>지용성 약물</b> 봉입에 이상적.</li>
+<li>방법: 약물을 <span class="red">수용매에서 HSA와 섞고 → 고압으로 제트를 통과</span>시켜 <span class="n">100–200 nm</span> 약물-알부민 나노입자(작은 리포좀 크기).</li>
+<li><b>nab-paclitaxel(Abraxane)</b>: 지름 약 <span class="n">130 nm</span>, <span class="n">2005년</span> <b>전이성 유방암</b> 승인, 전임상에서 paclitaxel보다 우수한 항종양 효과.</li>
+</ul></div>
+
+<h3>왜 Abraxane이 필요했나</h3>
+<ul class="tight">
+<li>Paclitaxel은 주목(yew, <i>Taxus</i> ← 그리스어 toxon "독")에서 유래. 물에 안 녹아서 Taxol은 <b>Cremophor EL</b>(폴리옥시에틸화 피마자유, 주성분 리시놀레산)에 녹여 씀.</li>
+<li><span class="red">Cremophor EL 독성</span>: 심한 과민반응, 고지혈증, 비정상 지단백 패턴, 적혈구 응집, 말초신경병증.</li>
+<li>Abraxane 구조: <b>알부민 껍질</b>이 알부민-paclitaxel 복합체를 감싼 평균 130 nm 입자. 알부민 1분자가 paclitaxel <span class="n">6–7</span>분자 결합.</li>
+<li>종양으로 가는 길 2가지: <b>gp60 수용체 매개 transcytosis</b>(혈관벽 통과) + <b>EPR 효과</b>.</li>
+</ul>
+<div class="exam"><p class="et">Taxol vs Abraxane 비교표 (출제 예상)</p>
+<div class="tbl num"><table><thead><tr><th></th><th>Taxol (1세대)</th><th>Abraxane (2세대)</th></tr></thead><tbody>
+<tr><td>부형제</td><td>Cremophor EL</td><td>사람 혈청 알부민(생물학적 고분자)</td></tr>
+<tr><td>최대 내약 용량(사람)</td><td>175 mg/m²</td><td>260 mg/m²</td></tr>
+<tr><td>마우스 MTD / LD₅₀</td><td>13.4 / 30 mg/kg</td><td>30 / 47 mg/kg</td></tr>
+<tr><td>종양 내 농도</td><td>기준</td><td><b>33% 더 높음</b>(같은 몰 용량)</td></tr>
+<tr><td>주입 시간</td><td>3시간</td><td><b>30분</b>(적은 생리식염수 부피)</td></tr>
+</tbody></table></div></div>
+</section>
+
+<section id="l2d">
+<p class="kicker">2강 ④ · Diabetes / Obesity</p>
+<h2>지방산을 붙여서 알부민에 태우기</h2>
+<p class="lead">이 파트 전체를 관통하는 원리: 펩타이드 약물에 <b>지방산</b>을 붙이면 → 혈중 <b>알부민에 결합</b> → 신장 여과와 효소(DPP-4) 분해를 피함 → <b>반감기가 크게 늘어남</b>.</p>
+
+<h3>인슐린 작용 시간</h3>
+<div class="tbl"><table><thead><tr><th>종류</th><th>예</th><th>발현 / 최고점</th></tr></thead><tbody>
+<tr><td>초속효성</td><td>Lispro, Aspart, Glulisine</td><td>5–10분 / 30–90분</td></tr>
+<tr><td>속효성</td><td>Regular</td><td>30분–1시간 / 2–3시간</td></tr>
+<tr><td>중간형</td><td>NPH</td><td>1–3시간 / 4–12시간</td></tr>
+<tr><td>지속형</td><td><b>Detemir</b>, Glargine</td><td>1–2시간 / <b>최고점 없음</b></td></tr>
+</tbody></table></div>
+
+<div class="exam"><p class="et">인슐린 디터미어(Levemir) (출제 예상)</p>
+<ul class="tight">
+<li>Novo Nordisk의 <b>기저(basal) 인슐린 유사체</b>, 제1·2형 당뇨.</li>
+<li>공식명 <b>LysB29(N-tetradecanoyl)des(B30) human insulin</b>: B사슬 30번 <b>트레오닌을 제거</b>하고, B29 <b>라이신의 ε-아미노기</b>에 <span class="red">미리스트산(C14)</span>을 공유결합.</li>
+<li>지방산이 주는 효과: 용해성, <b>자기회합(self-association)</b>, <b>알부민 결합</b> → 작용 지속.</li>
+<li>알부민에는 지방산 결합 자리가 <span class="n">&gt;5개</span>.</li>
+</ul>
+<p>참고: 슬라이드 46은 "C-말단 Thr을 Lys로 바꾸고"라고, 47은 "B29의 Thr을 빼고"라고 표현이 엇갈려요. 공식명(des(B30), LysB29) 기준으로 "B30 Thr 제거 + B29 Lys에 C14 결합"으로 외우면 안전해요.</p></div>
+
+<h3>GLP-1과 유사체</h3>
+<ul class="tight">
+<li>GLP-1 작용: 뇌(식욕↓ 포만감↑), 췌장(<b>인슐린↑ 글루카곤↓</b> β세포 증식↑), 위장(위 배출↓ 위산↓), 심장(혈압↓ 심박수↑ 등), 근육·지방(포도당 이용↑), 신장(나트륨 배설↑).</li>
+<li>내인성 GLP-1은 반감기 <span class="n">2분</span>(DPP-4가 금방 자름).</li>
+</ul>
+<div class="exam"><p class="et">리라글루타이드 vs 세마글루타이드 (출제 예상)</p>
+<div class="tbl"><table><thead><tr><th></th><th>Liraglutide (Victoza)</th><th>Semaglutide (Ozempic)</th></tr></thead><tbody>
+<tr><td>지방산</td><td><b>C16</b> 지방산(γ-Glu 연결)</td><td><b>C18</b> 지방이산(γ-Glu + 링커)</td></tr>
+<tr><td>서열 변형</td><td>34번 Arg</td><td>34번 Arg + 8번 <b>Aib</b>(DPP-4 저항)</td></tr>
+<tr><td>반감기</td><td><span class="n">11.2–12.2 h</span> → 하루 1회</td><td><span class="n">165 h</span> → 주 1회</td></tr>
+</tbody></table></div>
+<p>리라글루타이드 작용 원리 그림: 지방산 → <b>알부민 결합</b> → <span class="red">DPP-4 분해↓, 신장 여과↓</span> / 지방산끼리 <b>응집(aggregation)</b> → 피하에서 <b>서서히 방출</b>.</p></div>
+
+<h3>GLP-1 약물의 반감기 늘리기 전략</h3>
+<div class="tbl num"><table><thead><tr><th>약물(승인)</th><th>t½</th><th>전략</th></tr></thead><tbody>
+<tr><td>내인성 GLP-1</td><td>2 min</td><td>-</td></tr>
+<tr><td>Exenatide / Byetta (2005)</td><td>2.4 h</td><td>서열 변형, 하루 2회</td></tr>
+<tr><td>Lixisenatide / Adlyxin (2016)</td><td>3 h</td><td>서열 변형, 하루 1회</td></tr>
+<tr><td>Liraglutide / Victoza (2010)</td><td>13 h</td><td><b>지방산 사슬</b>, 하루 1회</td></tr>
+<tr><td>Exenatide 미립구 / Bydureon (2012)</td><td>2.4 h + 서방</td><td><b>서방형 전달 시스템</b>, 주 1회</td></tr>
+<tr><td>Albiglutide / Tanzeum, Dulaglutide / Trulicity (2014)</td><td>120 h</td><td><b>단백질 융합</b>, 주 1회</td></tr>
+<tr><td>Semaglutide / Ozempic (2017)</td><td>168 h</td><td><b>지방산 사슬</b>, 주 1회</td></tr>
+</tbody></table></div>
+
+<h3>비만 치료제</h3>
+<ul class="tight">
+<li>흐름: Orlistat(1999) → Phentermine/Topiramate(2012) → Naltrexone/Bupropion(2014) → <b>Liraglutide(2014)</b> → <b>Semaglutide(2021)</b>.</li>
+<li><b>Wegovy</b>(세마글루타이드 <span class="n">2.4 mg</span>, 주 1회): <span class="n">2021년 6월 4일</span> FDA 승인, BMI ≥30 비만 또는 ≥27 과체중 + 체중 관련 질환, 식이·운동과 병행.</li>
+</ul>
+<div class="exam"><p class="et">티르제파타이드(Mounjaro, Lilly) (출제 예상)</p>
+<ul class="tight">
+<li><span class="n">39</span>개 아미노산 합성 펩타이드, <b>GIP + GLP-1 수용체 이중 작용제</b>.</li>
+<li><b>GIP 서열</b> 기반 + <span class="red">C20 지방이산</span>.</li>
+<li>반감기 약 <span class="n">5일(116.7 h)</span>.</li>
+<li>당뇨용 이름은 <b>Mounjaro</b>, 비만용(2023년 11월 8일 FDA 승인)은 <b>Zepbound</b>. 기준은 Wegovy와 같이 BMI ≥30, 또는 ≥27 + 체중 관련 질환 1개 이상.</li>
+</ul></div>
+</section>
+
+<section id="nums">
+<p class="kicker">시험 직전</p>
+<h2>숫자·키워드 총정리</h2>
+<div class="tbl num"><table><thead><tr><th>키워드</th><th>숫자</th></tr></thead><tbody>
+<tr><td>Multimer / Oligomer / Polymer</td><td>5–30 / 30–100 / &gt;200</td></tr>
+<tr><td>고분자 구조 연대</td><td>선형 1930s, 가교젤 1940s, 가지 1960s, 덴드리머 1980s</td></tr>
+<tr><td>젤라틴 졸-겔</td><td>약 35 °C</td></tr>
+<tr><td>알부민 농도 / 분자량</td><td>35–50 g/L / 66.5 kDa</td></tr>
+<tr><td>알부민 합성 / 반감기</td><td>0.7 mg/h/g 간, 10–15 g/일 / 19일</td></tr>
+<tr><td>알부민 안정성</td><td>pH 4–9, 40% EtOH, 60 °C 10 h</td></tr>
+<tr><td>지방산 결합 자리</td><td>&gt;5개(Myr1–5)</td></tr>
+<tr><td>nab 입자 / Abraxane</td><td>100–200 nm / 130 nm, 2005 전이성 유방암</td></tr>
+<tr><td>알부민당 paclitaxel</td><td>6–7분자</td></tr>
+<tr><td>MTD Taxol / Abraxane</td><td>175 / 260 mg/m²</td></tr>
+<tr><td>주입 시간</td><td>3 h → 30 min</td></tr>
+<tr><td>종양 내 paclitaxel</td><td>Abraxane이 33%↑</td></tr>
+<tr><td>지방산 길이</td><td>Detemir C14, Liraglutide C16, Semaglutide C18, Tirzepatide C20</td></tr>
+<tr><td>반감기</td><td>GLP-1 2 min, Liraglutide ~12 h, Semaglutide 165 h, Tirzepatide 116.7 h(5일)</td></tr>
+<tr><td>Wegovy</td><td>2.4 mg, 2021.06.04, BMI ≥30 / ≥27</td></tr>
+</tbody></table></div>
+<p class="lead">한 문장 요약: 알부민은 혈중에서 가장 많고 오래 사는 운반 단백질이라, <b>약을 싣거나(Abraxane), 약에 지방산을 달아 알부민에 태우면(디터미어, GLP-1 유사체)</b> 독성은 줄고 반감기와 표적성은 늘어난다.</p>
+</section>
+
+<footer>출처: 2026 의약품생체재료학 기말 범위, 나 교수님 자료 1강 Introduction, 2강 Natural polymers–Proteins. 약물 결합 자리 이름(Site 1·2)과 Liraglutide 34번 Arg·Semaglutide Aib 표기는 슬라이드 그림에서 읽은 내용이에요.</footer>
+</div>
+
+</body></html>
