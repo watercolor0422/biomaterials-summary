@@ -53,6 +53,15 @@ ul.tight li,ol.tight li{margin:5px 0}
 .n{font-family:var(--mono);font-size:.92em;background:var(--teal-soft);color:var(--teal);padding:0 5px;border-radius:5px;white-space:nowrap}
 pre.mol{font-family:var(--mono);font-size:.84rem;line-height:1.45;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px;overflow-x:auto;margin:6px 0 12px}
 footer{margin-top:40px;color:var(--muted);font-size:.84rem}
+.chipg{flex:none;align-self:center;display:flex;align-items:center;gap:7px;
+font-size:.78rem;font-weight:700;color:var(--muted);letter-spacing:.02em;padding-left:2px}
+.chipg::before{content:'';width:1px;height:15px;background:var(--line)}
+.chipg:first-of-type::before{display:none}
+nav.chips a.st{border-color:var(--exam);color:var(--exam)}
+.lg-star{background:var(--exam-soft);color:var(--exam)}
+.lg-star2{background:var(--exam);color:#fff}
+.et .s{letter-spacing:-.04em;margin-right:4px}
+.exam.hot{box-shadow:inset 3px 0 0 var(--exam)}
 @media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
 </style>
 
@@ -60,11 +69,11 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <header class="top">
 <h1>의약품생체재료학 기말 요약본</h1>
 <p>1강(Introduction) · 2강(Natural polymers: Proteins) · 3강(Liposome)을 정리했어요. 기말은 족보가 없어서, 슬라이드에서 <b>밑줄·굵게</b> 강조된 문장과 숫자를 출제 예상으로 표시했어요. 리포좀 쪽은 필기에 <b>“시험 출제”</b>라고 적힌 슬라이드를 그대로 표시해 뒀어요.</p>
-<div class="legend"><span class="lg-exam">빨간 박스 = 출제 예상</span><span class="lg-num">초록 숫자 = 외울 숫자</span></div>
+<div class="legend"><span class="lg-star2">★★ = 필기에 “시험 출제”·“외워야 함”</span><span class="lg-star">★ = 출제 예상</span><span class="lg-num">초록 숫자 = 외울 숫자</span></div>
 </header>
 
 <nav class="chips" aria-label="단원 바로가기">
-<a href="#map">범위 지도</a><a href="#l1">1강</a><a href="#l2a">단백질·젤라틴</a><a href="#l2b">알부민</a><a href="#l2c">Abraxane</a><a href="#l2d">당뇨·비만</a><a href="#l3a">리포좀 기초</a><a href="#l3b">구조·역사</a><a href="#l3c">장단점 ★</a><a href="#l3d">분류·제조</a><a href="#l3e">응용</a><a href="#nums">숫자 총정리</a>
+<a href="#map">범위 지도</a><span class="chipg">1강</span><a href="#l1">Introduction</a><span class="chipg">2강</span><a href="#l2a">단백질·젤라틴</a><a href="#l2b">알부민</a><a href="#l2c">Abraxane</a><a href="#l2d">당뇨·비만</a><span class="chipg">3강</span><a href="#l3a">리포좀 기초</a><a href="#l3b">구조·역사</a><a class="st" href="#l3c">장단점 ★★</a><a href="#l3d">분류·제조</a><a href="#l3e">응용</a><span class="chipg">정리</span><a href="#nums">숫자 총정리</a>
 </nav>
 
 <section id="map">
@@ -76,14 +85,14 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <tr><td>2강 ①</td><td>천연 고분자, 단백질 구조, 콜라겐 → 젤라틴</td><td>천연 고분자 장점 2가지, 접합 단백질 표, 젤라틴 Type A/B, Gelfoam</td></tr>
 <tr><td>2강 ②</td><td>알부민의 숫자·기능·구조·용도, EPR</td><td>66.5 kDa, 35–50 g/L, 반감기 19일, 기능 6가지, 도메인 I–III, EPR</td></tr>
 <tr><td>2강 ③</td><td>nab 기술, Abraxane</td><td>100–200 nm / 130 nm, 2005 유방암, Cremophor EL 독성, 3 h → 30 min</td></tr>
-<tr><td>2강 ④</td><td>인슐린 디터미어, GLP-1, 티르제파타이드</td><td>지방산 결합 → 알부민 결합 → 반감기↑, C14/C16/C18/C20, 반감기 숫자</td></tr><tr><td>3강 ①</td><td>리포좀 정의, 지질 기초, 구조, 역사</td><td>정의 3가지, 인지질·콜레스테롤 역할, Bangham, Doxil 1995</td></tr><tr><td>3강 ②</td><td><b class="red">장점 5 · 단점 5</b> (필기 “시험 출제”)</td><td class="red">여기가 제일 중요 — 5개씩 통째로</td></tr><tr><td>3강 ③</td><td>크기·라멜라 분류, 제조법 4가지, 전달 5단계</td><td>SUV/LUV/GUV/MLV 숫자(★), Bangham법, extrusion 0.3–0.4 µm, EPR·endocytosis</td></tr><tr><td>3강 ④</td><td>응용(식품·화장품·의약품), 지질 나노입자 계보</td><td>승인 제품표(Doxil·AmBisome·Onivyde…), 리포좀 → SLN → NLC → LNP</td></tr>
+<tr><td>2강 ④</td><td>인슐린 디터미어, GLP-1, 티르제파타이드</td><td>지방산 결합 → 알부민 결합 → 반감기↑, C14/C16/C18/C20, 반감기 숫자</td></tr><tr><td>3강 ①</td><td>리포좀 정의, 지질 기초, 구조, 역사</td><td>정의 3가지, 인지질·콜레스테롤 역할, Bangham, Doxil 1995</td></tr><tr><td>3강 ②</td><td><b class="red">★★ 장점 5 · 단점 5</b> (필기 “시험 출제”)</td><td class="red">여기가 제일 중요 — 5개씩 통째로</td></tr><tr><td>3강 ③</td><td>크기·라멜라 분류, 제조법 4가지, 전달 5단계</td><td>SUV/LUV/GUV/MLV 숫자(★), Bangham법, extrusion 0.3–0.4 µm, EPR·endocytosis</td></tr><tr><td>3강 ④</td><td>응용(식품·화장품·의약품), 지질 나노입자 계보</td><td>승인 제품표(Doxil·AmBisome·Onivyde…), 리포좀 → SLN → NLC → LNP</td></tr>
 </tbody></table></div>
 </section>
 
 <section id="l1">
 <p class="kicker">1강 · Introduction</p>
 <h2>의약품 생체재료와 고분자 기초</h2>
-<div class="exam"><p class="et">정의 (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>정의 (출제 예상)</p>
 <p><b>Pharmaceutical Biomaterials</b>: 생물학적 시스템과 적합한 재료를 개발·응용하여 <span class="red">약물전달(drug delivery), 조직공학(tissue engineering), 재생의학(regenerative medicine)</span>에 쓰는 다학제 분야. 생체재료는 생물학적 시스템과 <b>안전하고 효과적으로 상호작용</b>하도록 설계된다.</p></div>
 
 <h3>1-1. 약물전달시스템(DDS)</h3>
@@ -105,7 +114,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <li>polymer = poly(많은) + meros(부분) → <b>"many parts"</b>. 작은 반복단위가 많이 이어진 큰 분자(클립을 줄줄이 연결한 그림, PLA 구조).</li>
 <li>단량체(monomer): 같은 또는 다른 분자와 결합해 고분자가 되는 작은 분자. 고분자는 반복단위 하나만 그려 표시(예: 폴리아크릴아마이드 -[CH₂-CH(CONH₂)]n-).</li>
 </ul>
-<div class="exam"><p class="et">올리고머 표 (숫자 출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>올리고머 표 (숫자 출제 예상)</p>
 <div class="tbl num"><table><thead><tr><th>용어</th><th>단위 수</th></tr></thead><tbody>
 <tr><td>Monomer</td><td>1</td></tr><tr><td>Dimer</td><td>2</td></tr><tr><td>Trimer</td><td>3</td></tr>
 <tr><td>Multimer</td><td>5–30</td></tr><tr><td>Oligomer</td><td>30–100</td></tr><tr><td>Polymer</td><td>&gt; 200</td></tr>
@@ -128,7 +137,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <tr><td>③ 이온</td><td>n-부틸리튬(C₄H₉⁻Li⁺) + 스타이렌 → 폴리스티렌 음이온</td><td>사슬중합의 활성점이 <span class="red">라디칼 대신 이온</span></td></tr>
 </tbody></table></div>
 
-<div class="exam"><p class="et">약학용 생체재료 3분류 (1강·2강 첫 슬라이드에 반복)</p>
+<div class="exam"><p class="et"><span class="s">★</span>약학용 생체재료 3분류 (1강·2강 첫 슬라이드에 반복)</p>
 <ul class="tight">
 <li><b>천연 고분자</b>: 히알루론산, 콘드로이틴 황산, 키토산, 알긴산, 셀룰로오스, 단백질, 핵산</li>
 <li><b>합성 고분자</b>: PLA, PLGA, PEG</li>
@@ -140,7 +149,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <p class="kicker">2강 ① · Natural polymers</p>
 <h2>천연 고분자, 단백질, 젤라틴</h2>
 <p>천연 고분자 = 자연에 존재하고 식물·동물에서 추출하는 고분자. <b>단백질, 다당류, 폴리에스터</b>가 이 가족이에요. 일부는 음식으로도 먹고, 의약품 첨가제, 보철, 약물전달, 영상 진단에 쓰여요.</p>
-<div class="exam"><p class="et">천연 고분자의 장점 2가지 (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>천연 고분자의 장점 2가지 (출제 예상)</p>
 <ol class="tight">
 <li>생물학적 환경이 <b>인식</b>하여 <span class="red">대사적 분해 경로로 처리</span>된다(생분해).</li>
 <li><b>세포외기질(ECM)</b>과 닮아서 합성 고분자에서 흔한 <span class="red">만성 면역 반응과 독성</span>을 피할 수 있다.</li>
@@ -162,7 +171,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 </tbody></table></div>
 
 <h3>콜라겐 → 젤라틴</h3>
-<div class="exam"><p class="et">젤라틴 (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>젤라틴 (출제 예상)</p>
 <ul class="tight">
 <li>콜라겐(<b>삼중나선</b>)을 <b>산/염기 가수분해 + 가열</b> → 젤라틴 용액.</li>
 <li>식히면(<span class="n">약 35 °C 미만</span>) <b>물리적 가교(junction zone)</b>로 젤, 데우면(약 35 °C 이상) 다시 용액 → <b>열가역성</b>. 그래서 캡슐 재료.</li>
@@ -175,7 +184,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <section id="l2b">
 <p class="kicker">2강 ② · Albumin</p>
 <h2>알부민: 혈액 속 가장 흔한 운반 단백질</h2>
-<div class="exam"><p class="et">알부민 기본 숫자 (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>알부민 기본 숫자 (출제 예상)</p>
 <div class="tbl num"><table><tbody>
 <tr><td>혈장 농도</td><td><span class="n">35–50 g/L</span> (가장 많은 혈장 단백질)</td></tr>
 <tr><td>분자량</td><td><span class="n">66.5 kDa</span></td></tr>
@@ -184,7 +193,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <tr><td>안정성</td><td>pH <span class="n">4–9</span> 안정, <span class="n">40%</span> 에탄올에 용해, <span class="n">60 °C</span>에서 <span class="n">10 h</span> 가열해도 괜찮음</td></tr>
 </tbody></table></div></div>
 
-<div class="exam"><p class="et">HSA의 기능 6가지 (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>HSA의 기능 6가지 (출제 예상)</p>
 <ol class="tight" type="a">
 <li><b>장쇄 지방산</b>의 가용화제 → 지질 대사에 필수</li>
 <li>헴 분해산물 <b>빌리루빈</b> 결합</li>
@@ -208,7 +217,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <li>혈액 유래 대신 <b>재조합 HSA(Recombumin)</b>: <b>효모</b>에서 발현, 안전성·내약성·PK·PD가 천연 HSA와 동등. (Prime 20% w/v, Elite 10% w/v)</li>
 </ul>
 
-<div class="exam"><p class="et">알부민이 이상적인 약물 운반체인 이유 (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>알부민이 이상적인 약물 운반체인 이유 (출제 예상)</p>
 <p>산성이고 잘 녹으며 매우 튼튼함(pH 4–9, 40% 에탄올, 60 °C 10 h) + <b>종양·염증 조직에 선택적 흡수</b> + 쉽게 구할 수 있음 + <b>생분해성</b> + <b>독성·면역원성 없음</b>.</p></div>
 
 <h3>왜 종양·염증 부위에 쌓일까: EPR</h3>
@@ -229,7 +238,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <section id="l2c">
 <p class="kicker">2강 ③ · Albumin nanoparticles</p>
 <h2>nab 기술과 Abraxane</h2>
-<div class="exam"><p class="et">nab-technology (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>nab-technology (출제 예상)</p>
 <ul class="tight">
 <li>American Bioscience가 개발한 <b>알부민 기반 나노입자 기술</b>, <b>지용성 약물</b> 봉입에 이상적.</li>
 <li>방법: 약물을 <span class="red">수용매에서 HSA와 섞고 → 고압으로 제트를 통과</span>시켜 <span class="n">100–200 nm</span> 약물-알부민 나노입자(작은 리포좀 크기).</li>
@@ -243,7 +252,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <li>Abraxane 구조: <b>알부민 껍질</b>이 알부민-paclitaxel 복합체를 감싼 평균 130 nm 입자. 알부민 1분자가 paclitaxel <span class="n">6–7</span>분자 결합.</li>
 <li>종양으로 가는 길 2가지: <b>gp60 수용체 매개 transcytosis</b>(혈관벽 통과) + <b>EPR 효과</b>.</li>
 </ul>
-<div class="exam"><p class="et">Taxol vs Abraxane 비교표 (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>Taxol vs Abraxane 비교표 (출제 예상)</p>
 <div class="tbl num"><table><thead><tr><th></th><th>Taxol (1세대)</th><th>Abraxane (2세대)</th></tr></thead><tbody>
 <tr><td>부형제</td><td>Cremophor EL</td><td>사람 혈청 알부민(생물학적 고분자)</td></tr>
 <tr><td>최대 내약 용량(사람)</td><td>175 mg/m²</td><td>260 mg/m²</td></tr>
@@ -266,7 +275,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <tr><td>지속형</td><td><b>Detemir</b>, Glargine</td><td>1–2시간 / <b>최고점 없음</b></td></tr>
 </tbody></table></div>
 
-<div class="exam"><p class="et">인슐린 디터미어(Levemir) (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>인슐린 디터미어(Levemir) (출제 예상)</p>
 <ul class="tight">
 <li>Novo Nordisk의 <b>기저(basal) 인슐린 유사체</b>, 제1·2형 당뇨.</li>
 <li>공식명 <b>LysB29(N-tetradecanoyl)des(B30) human insulin</b>: B사슬 30번 <b>트레오닌을 제거</b>하고, B29 <b>라이신의 ε-아미노기</b>에 <span class="red">미리스트산(C14)</span>을 공유결합.</li>
@@ -280,7 +289,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <li>GLP-1 작용: 뇌(식욕↓ 포만감↑), 췌장(<b>인슐린↑ 글루카곤↓</b> β세포 증식↑), 위장(위 배출↓ 위산↓), 심장(혈압↓ 심박수↑ 등), 근육·지방(포도당 이용↑), 신장(나트륨 배설↑).</li>
 <li>내인성 GLP-1은 반감기 <span class="n">2분</span>(DPP-4가 금방 자름).</li>
 </ul>
-<div class="exam"><p class="et">리라글루타이드 vs 세마글루타이드 (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>리라글루타이드 vs 세마글루타이드 (출제 예상)</p>
 <div class="tbl"><table><thead><tr><th></th><th>Liraglutide (Victoza)</th><th>Semaglutide (Ozempic)</th></tr></thead><tbody>
 <tr><td>지방산</td><td><b>C16</b> 지방산(γ-Glu 연결)</td><td><b>C18</b> 지방이산(γ-Glu + 링커)</td></tr>
 <tr><td>서열 변형</td><td>34번 Arg</td><td>34번 Arg + 8번 <b>Aib</b>(DPP-4 저항)</td></tr>
@@ -304,7 +313,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <li>흐름: Orlistat(1999) → Phentermine/Topiramate(2012) → Naltrexone/Bupropion(2014) → <b>Liraglutide(2014)</b> → <b>Semaglutide(2021)</b>.</li>
 <li><b>Wegovy</b>(세마글루타이드 <span class="n">2.4 mg</span>, 주 1회): <span class="n">2021년 6월 4일</span> FDA 승인, BMI ≥30 비만 또는 ≥27 과체중 + 체중 관련 질환, 식이·운동과 병행.</li>
 </ul>
-<div class="exam"><p class="et">티르제파타이드(Mounjaro, Lilly) (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>티르제파타이드(Mounjaro, Lilly) (출제 예상)</p>
 <ul class="tight">
 <li><span class="n">39</span>개 아미노산 합성 펩타이드, <b>GIP + GLP-1 수용체 이중 작용제</b>.</li>
 <li><b>GIP 서열</b> 기반 + <span class="red">C20 지방이산</span>.</li>
@@ -321,7 +330,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 물에 넣으면 저절로 이중층이 되고, 그 이중층이 공처럼 닫히면 <b>리포좀</b>이에요.
 가운데 물주머니에는 <b>수용성 약</b>을, 이중층 기름막 사이에는 <b>지용성 약</b>을 실어요.</p>
 
-<div class="exam"><p class="et">리포좀의 정의 3가지 (출제 예상 · 슬라이드에 별표 3개)</p>
+<div class="exam hot"><p class="et"><span class="s">★★</span>리포좀의 정의 3가지 (출제 예상 · 슬라이드에 별표 3개)</p>
 <ol class="tight">
 <li><b>일반적 정의</b>: 여러 물질을 담거나 운반할 수 있는, 지질 분자로 만든 <span class="red">아주 작은 구형 소포(tiny spherical vesicles)</span>. 막으로 둘러싸인 작은 거품 같고, 안에 물 공간이 있어요.</li>
 <li><b>생화학적 정의</b>: <span class="red">하나 이상의 인지질 이중층(phospholipid bilayer)</span>이 물 구획을 감싼 구형 소포. 양친매성 인지질이 물속에서 <b>저절로</b> 이중층을 이루고, 그 이중층이 닫히면서 내부 수상 공간이 생겨요.</li>
@@ -351,7 +360,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <p class="kicker">3강 ② · Structure &amp; History</p>
 <h2>리포좀의 구조와 역사</h2>
 
-<div class="exam"><p class="et">리포좀 구조 5요소 (필기: “이 그림을 딱 외워야 함”)</p>
+<div class="exam hot"><p class="et"><span class="s">★★</span>리포좀 구조 5요소 (필기: “이 그림을 딱 외워야 함”)</p>
 <ol class="tight">
 <li><b>인지질 이중층</b> — 껍데기. 친수성 머리는 바깥쪽 물을 보고, 소수성 꼬리는 안으로 숨어요.</li>
 <li><b>수성 코어</b> — 가운데 물 공간. <span class="red">수용성(친수성) 약물·단백질·핵산</span>을 담아요.</li>
@@ -370,7 +379,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 
 <p>흔한 인지질 머리 5가지: <b>PC</b>(포스파티딜콜린) · <b>PE</b>(에탄올아민) · <b>PS</b>(세린) · <b>PG</b>(글리세롤) · <b>PA</b>(포스파티드산). 리포좀에서 가장 많이 쓰이는 건 <b>PC</b>예요.</p>
 
-<div class="exam"><p class="et">리포좀의 역사 (연도 출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>리포좀의 역사 (연도 출제 예상)</p>
 <ul class="tight">
 <li><span class="n">1961–1964</span> <b>Alec D. Bangham</b>(영국 혈액학자)이 건조 인지질을 전자현미경으로 보다가 우연히 발견. 처음엔 “multilamellar smectic mesophases” 또는 <b>Banghasome</b>이라 불렀어요.</li>
 <li><span class="n">1968</span> Gerald Weissmann이 세포소기관 <b>lysosome</b>에 빗대어 <b>liposome</b>이라 이름 붙임.</li>
@@ -395,7 +404,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <p class="lead">이 슬라이드에만 별이 두 개 그려져 있고 <b class="red">“시험 출제”</b>라고 적혀 있어요.
 5개씩 <b>번호 순서까지</b> 외워두면 좋아요.</p>
 
-<div class="exam"><p class="et">리포좀의 주요 장점 5가지</p>
+<div class="exam hot"><p class="et"><span class="s">★★</span>리포좀의 주요 장점 5가지 (필기: “시험 출제”)</p>
 <ol class="tight">
 <li><b>뛰어난 생체적합성 및 생분해성</b> — 우리 몸 세포막과 같은 성분(인지질·콜레스테롤)이라 체내에서 자연스럽게 분해돼요. 전달체 자체의 독성이나 면역 거부 반응이 적어요.</li>
 <li><b>친수성·소수성 약물의 동시 탑재</b> — 수용성 공간에는 친수성 약, 지질 이중층 사이에는 지용성 약. 그래서 활용 범위가 넓어요.</li>
@@ -404,7 +413,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <li><b>표적 지향적 전달 (EPR 효과)</b> — 나노 크기 입자가 정상 혈관보다 구멍이 크고 엉성한 암 조직 혈관 틈으로 빠져나가 축적되는 <b>수동적 표적화</b>. 표면에 항체·리간드를 붙이면 <b>능동적 표적화</b>도 가능.</li>
 </ol></div>
 
-<div class="exam"><p class="et">리포좀의 주요 단점 5가지</p>
+<div class="exam hot"><p class="et"><span class="s">★★</span>리포좀의 주요 단점 5가지 (필기: “시험 출제”)</p>
 <ol class="tight">
 <li><b>물리·화학적 불안정성과 약물 누출</b> — 액상 보관 중 인지질이 가수분해·산화되기 쉽고, 입자끼리 <b>뭉치거나(응집) 합쳐지면서(융합)</b> 담아둔 약이 새어 나와요.</li>
 <li><b>망상내피계(RES)에 의한 빠른 제거</b> — 표면 처리를 안 한 일반 리포좀은 혈액 속 <b>옵소닌 단백질</b>과 결합한 뒤 <span class="red">간·비장의 대식세포</span>에 빠르게 포식돼 제거돼요. <span class="red">(필기: 간의 쿠퍼세포, 비장에도 있음)</span></li>
@@ -413,7 +422,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <li><b>특이적 이상반응 (CARPA 및 피부 독성) 가능성</b> — 정맥 투여 시 보체계 활성화로 인한 <b>급성 과민반응(CARPA)</b>이 나타날 수 있고, PEG화 리포좀은 혈중 체류가 길어지면서 <b>손발바닥 홍반성 감각이상(수족증후군)</b> 같은 부작용이 보고돼요.</li>
 </ol></div>
 
-<div class="exam"><p class="et">그래서 나온 다음 세대 (같은 슬라이드 아래 박스)</p>
+<div class="exam hot"><p class="et"><span class="s">★★</span>그래서 나온 다음 세대 (“시험 출제” 슬라이드 아래 박스)</p>
 <ul class="tight">
 <li><b>SLN (고체 지질 나노입자, Solid Lipid Nanoparticle)</b>와 <b>NLC (혼합지질 운반체, Nanostructured Lipid Carrier)</b> — 리포좀의 <span class="red">보관 안정성 저하 · 약물 누출 · 높은 제조 단가</span>를 해결하려고 고안됐어요. <span class="red">(필기: 단점 보완을 위해 최근에 바뀜)</span></li>
 <li><b>차세대 LNP</b> — 거대 유전물질(mRNA)의 <b>봉입률과 세포 내 전달 효율</b>을 극대화하는 방향으로 발전한 결과물.</li>
@@ -426,7 +435,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <p class="kicker">3강 ④ · Classification &amp; Preparation</p>
 <h2>크기 분류 · 제조법 · 전달 메커니즘</h2>
 
-<div class="exam"><p class="et">크기와 라멜라 수에 따른 분류 (필기: “이 크기들 외워야 함” ★)</p>
+<div class="exam hot"><p class="et"><span class="s">★★</span>크기와 라멜라 수에 따른 분류 (필기: “이 크기들 외워야 함”)</p>
 <div class="tbl num"><table>
 <thead><tr><th>구분</th><th>크기</th><th>특징</th></tr></thead><tbody>
 <tr><td><b>SUV</b> (Small Unilamellar Vesicle)</td><td><span class="n">20–100 nm</span></td><td>이중층 1겹, 수성 코어 작음, 크기 균일</td></tr>
@@ -445,7 +454,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <tr><td>④ <b>Microfluidics</b> (현대적 대량생산)</td><td>에탄올에 녹인 지질 + 수성 약물 용액을 미세 유로에서 빠르게 섞음</td><td>균일한 <b>LNP</b></td></tr>
 </tbody></table></div>
 
-<div class="exam"><p class="et">리포좀의 약물 전달 5단계 (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>리포좀의 약물 전달 5단계 (출제 예상)</p>
 <ol class="tight">
 <li><b>약물 봉입</b> — 친수성 약은 수성 코어에, 소수성 약은 지질 이중층에.</li>
 <li><b>혈중 순환</b> — <b>PEG화</b>가 청소(clearance)를 줄여 순환 시간을 늘려요.</li>
@@ -487,7 +496,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <tr><td><b>Exparel</b></td><td>Bupivacaine</td><td>수술 후 통증 관리</td></tr>
 </tbody></table></div>
 
-<div class="exam"><p class="et">주요 승인 리포좀 의약품 (연도·지질 조성 출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>주요 승인 리포좀 의약품 (연도·지질 조성 출제 예상)</p>
 <div class="tbl num"><table>
 <thead><tr><th>제품 (승인)</th><th>성분</th><th>제형</th><th>경로</th></tr></thead><tbody>
 <tr><td><b>Doxil / Caelyx</b> (1995)</td><td>Doxorubicin HCl</td><td><b>PEG화 스텔스 리포좀</b> (HSPC, 콜레스테롤, DSPE-PEG2000)</td><td>IV</td></tr>
@@ -504,7 +513,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <tr><td>Arikayce (2018)</td><td>Amikacin</td><td>리포좀 흡입 현탁액</td><td><b>흡입</b></td></tr>
 </tbody></table></div></div>
 
-<div class="exam"><p class="et">지질 기반 나노입자의 계보 (출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>지질 기반 나노입자의 계보 (출제 예상)</p>
 <p><b>① Lipid Emulsion → ② Liposome → ③ SLN → ④ NLC → ⑤ Ionizable LNP (mRNA LNP)</b></p>
 <ul class="tight">
 <li><b>① 지질 에멀션</b>: 계면활성제가 감싼 기름방울.</li>
@@ -517,7 +526,7 @@ footer{margin-top:40px;color:var(--muted);font-size:.84rem}
 <h3>앞으로의 방향</h3>
 <p>일반 리포좀 → <b>장기 순환형</b>(PEG화) → <b>표적형</b>(리간드) → <b>지질 나노입자</b>(고체 지질, 방출 조절) → <b>LNP</b>(mRNA·siRNA, 유전자 치료) → <b>스마트 지질 시스템</b>(자극 반응형·다기능·맞춤 의학). 변형 가능(deformable)·pH 감응·온도 감응 리포좀, 리포좀 + 다른 나노운반체 병용 전략도 있어요. 한 문장으로 <b>“단순한 운반체에서 지능형 나노의약품으로”</b>.</p>
 
-<div class="exam"><p class="et">Take-home messages (마지막 슬라이드 · 출제 예상)</p>
+<div class="exam"><p class="et"><span class="s">★</span>Take-home messages (마지막 슬라이드 · 출제 예상)</p>
 <ol class="tight">
 <li>인지질은 <b>양친매성</b> — 친수성 머리 + 소수성 꼬리.</li>
 <li>물속에서 <b>저절로 닫힌 이중층 소포</b>를 만들어요.</li>
